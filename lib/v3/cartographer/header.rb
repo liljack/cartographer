@@ -35,7 +35,7 @@ class Cartographer::Header
   def to_s
     # initialize the html with the IE polyline VML code
     html = "\n<!--[if IE]>\n<style type=\"text/css\">v\\:* { behavior:url(#default#VML); }</style>\n<![endif]-->"
-    html << "<script type=\"text/javascript\" src=\"#{@ssl ? 'https://maps-api-ssl.google.com' : 'http://maps.googleapis.com'}/maps/api/js?v=3&sensor=true&libraries=adsense\"></script>"
+    html << "<script type=\"text/javascript\" src=\"#{@ssl ? 'https://maps-api-ssl.google.com' : 'http://maps.googleapis.com'}/maps/api/js??key=AIzaSyAOyOh-RiPekQ-h4i_ulVx0_m5Kbsfb3w8&v=3&sensor=true&libraries=adsense\"></script>"
     html << "<script src='#{@ssl ? 'https' : 'http'}://google-maps-utility-library-v3.googlecode.com/svn/trunk/markermanager/src/markermanager_packed.js' type='text/javascript'></script>"
     html << "<script src='#{@ssl ? 'https' : 'http'}://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js' type='text/javascript'></script>"
     html << "<script src='#{@ssl ? 'https' : 'http'}://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerwithlabel/src/markerwithlabel_packed.js' type='text/javascript'></script>"   
